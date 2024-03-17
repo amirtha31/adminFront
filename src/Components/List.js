@@ -52,13 +52,13 @@ export default function List() {
 
   function fetchData() {
     axios
-      .get("http://localhost:3001/all-users")
+      .get("https://adminbackend-uf29.onrender.com/all-users")
       .then((data) => seTableData(data.data))
       .catch((err) => console.log(err));
       setDocumetNo("")
   }
   function handleSearch() {
-    axios.post("http://localhost:3001/search", {
+    axios.post("https://adminbackend-uf29.onrender.com/search", {
       DocumentNo
       
     }).then((data) => seTableData(data.data))

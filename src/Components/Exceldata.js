@@ -13,7 +13,7 @@ export default function Exceldata(){
     
     const value = form.values
     console.log(value);
-    axios.post("http://localhost:3001/add-data",{
+    axios.post("https://adminbackend-uf29.onrender.com/add-data",{
       value
     }).then((response)=>{
       console.log(response)

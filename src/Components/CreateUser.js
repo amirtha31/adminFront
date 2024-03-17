@@ -23,7 +23,7 @@ export default function CreateUser(){
     
     const value = form.values
     console.log(value)
-    axios.post("http://localhost:3001/add-user",{
+    axios.post("https://adminbackend-uf29.onrender.com/add-user",{
       value
     }).then((response)=>{
       console.log(response)
